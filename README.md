@@ -1,149 +1,59 @@
-![Vim Logo](https://github.com/vim/vim/blob/master/runtime/vimlogo.gif)
+# vim compiled for armhf (raspberrypi)
 
-[![Travis Build Status](https://travis-ci.org/vim/vim.svg?branch=master)](https://travis-ci.org/vim/vim)
-[![Appveyor Build status](https://ci.appveyor.com/api/projects/status/o2qht2kjm02sgghk?svg=true)](https://ci.appveyor.com/project/chrisbra/vim)
-[![Cirrus Build Status](https://api.cirrus-ci.com/github/vim/vim.svg)](https://cirrus-ci.com/github/vim/vim)
-[![Coverage Status](https://codecov.io/gh/vim/vim/coverage.svg?branch=master)](https://codecov.io/gh/vim/vim?branch=master)
-[![Coverity Scan](https://scan.coverity.com/projects/241/badge.svg)](https://scan.coverity.com/projects/vim)
-[![Language Grade: C/C++](https://img.shields.io/lgtm/grade/cpp/g/vim/vim.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/vim/vim/context:cpp)
-[![Debian CI](https://badges.debian.net/badges/debian/testing/vim/version.svg)](https://buildd.debian.org/vim)
-[![Packages](https://repology.org/badge/tiny-repos/vim.svg)](https://repology.org/metapackage/vim)
-For translations of this README see the end.
+Original readme is [here](README.original.md)
 
+## Installation
+```
+git clone git@github.com:smford/vim-armhf.git
+cd vim-armf
+sudo make install
+```
 
-## What is Vim? ##
-
-Vim is a greatly improved version of the good old UNIX editor Vi.  Many new
-features have been added: multi-level undo, syntax highlighting, command line
-history, on-line help, spell checking, filename completion, block operations,
-script language, etc.  There is also a Graphical User Interface (GUI)
-available.  Still, Vi compatibility is maintained, those who have Vi "in the
-fingers" will feel at home.  See `runtime/doc/vi_diff.txt` for differences with
-Vi.
-
-This editor is very useful for editing programs and other plain text files.
-All commands are given with normal keyboard characters, so those who can type
-with ten fingers can work very fast.  Additionally, function keys can be
-mapped to commands by the user, and the mouse can be used.
-
-Vim runs under MS-Windows (NT, 2000, XP, Vista, 7, 8, 10), Macintosh, VMS and
-almost all flavours of UNIX.  Porting to other systems should not be very
-difficult.  Older versions of Vim run on MS-DOS, MS-Windows 95/98/Me, Amiga
-DOS, Atari MiNT, BeOS, RISC OS and OS/2.  These are no longer maintained.
-
-## Distribution ##
-
-You can often use your favorite package manager to install Vim.  On Mac and
-Linux a small version of Vim is pre-installed, you still need to install Vim
-if you want more features.
-
-There are separate distributions for Unix, PC, Amiga and some other systems.
-This `README.md` file comes with the runtime archive.  It includes the
-documentation, syntax files and other files that are used at runtime.  To run
-Vim you must get either one of the binary archives or a source archive.
-Which one you need depends on the system you want to run it on and whether you
-want or must compile it yourself.  Check http://www.vim.org/download.php for
-an overview of currently available distributions.
-
-Some popular places to get the latest Vim:
-* Check out the git repository from [github](https://github.com/vim/vim).
-* Get the source code as an [archive](https://github.com/vim/vim/releases).
-* Get a Windows executable from the
-[vim-win32-installer](https://github.com/vim/vim-win32-installer/releases) repository.
-
-
-
-## Compiling ##
-
-If you obtained a binary distribution you don't need to compile Vim.  If you
-obtained a source distribution, all the stuff for compiling Vim is in the
-`src` directory.  See `src/INSTALL` for instructions.
-
-
-## Installation ##
-
-See one of these files for system-specific instructions.  Either in the
-READMEdir directory (in the repository) or the top directory (if you unpack an
-archive):
-
-	README_ami.txt		Amiga
-	README_unix.txt		Unix
-	README_dos.txt		MS-DOS and MS-Windows
-	README_mac.txt		Macintosh
-	README_vms.txt		VMS
-
-There are other `README_*.txt` files, depending on the distribution you used.
-
-
-## Documentation ##
-
-The Vim tutor is a one hour training course for beginners.  Often it can be
-started as `vimtutor`.  See `:help tutor` for more information.
-
-The best is to use `:help` in Vim.  If you don't have an executable yet, read
-`runtime/doc/help.txt`.  It contains pointers to the other documentation
-files.  The User Manual reads like a book and is recommended to learn to use
-Vim.  See `:help user-manual`.
-
-
-## Copying ##
-
-Vim is Charityware.  You can use and copy it as much as you like, but you are
-encouraged to make a donation to help orphans in Uganda.  Please read the file
-`runtime/doc/uganda.txt` for details (do `:help uganda` inside Vim).
-
-Summary of the license: There are no restrictions on using or distributing an
-unmodified copy of Vim.  Parts of Vim may also be distributed, but the license
-text must always be included.  For modified versions a few restrictions apply.
-The license is GPL compatible, you may compile Vim with GPL libraries and
-distribute it.
-
-
-## Sponsoring ##
-
-Fixing bugs and adding new features takes a lot of time and effort.  To show
-your appreciation for the work and motivate Bram and others to continue
-working on Vim please send a donation.
-
-Since Bram is back to a paid job the money will now be used to help children
-in Uganda.  See `runtime/doc/uganda.txt`.  But at the same time donations
-increase Bram's motivation to keep working on Vim!
-
-For the most recent information about sponsoring look on the Vim web site:
-	http://www.vim.org/sponsor/
-
-
-## Contributing ##
-
-If you would like to help making Vim better, see the [CONTRIBUTING.md](https://github.com/vim/vim/blob/master/CONTRIBUTING.md) file.
-
-
-## Information ##
-
-The latest news about Vim can be found on the Vim home page:
-	http://www.vim.org/
-
-If you have problems, have a look at the Vim documentation or tips:
-	http://www.vim.org/docs.php
-	http://vim.wikia.com/wiki/Vim_Tips_Wiki
-
-If you still have problems or any other questions, use one of the mailing
-lists to discuss them with Vim users and developers:
-	http://www.vim.org/maillist.php
-
-If nothing else works, report bugs directly:
-	Bram Moolenaar <Bram@vim.org>
-
-
-## Main author ##
-
-Send any other comments, patches, flowers and suggestions to:
-	Bram Moolenaar <Bram@vim.org>
-
-
-This is `README.md` for version 8.2 of Vim: Vi IMproved.
-
-
-## Translations of this README ##
-
-[Korean](https://github.com/cjw1359/opensource/blob/master/Vim/README_ko.md)
+## Version
+```
+aspberrypi# vim --version
+VIM - Vi IMproved 8.2 (2019 Dec 12, compiled Jan  8 2020 18:54:12)
+Included patches: 1-79
+Compiled by narcotk
+Huge version without GUI.  Features included (+) or not (-):
++acl               -farsi             -mouse_sysmouse    -tag_old_static
++arabic            +file_in_path      +mouse_urxvt       -tag_any_white
++autocmd           +find_in_path      +mouse_xterm       -tcl
++autochdir         +float             +multi_byte        +termguicolors
+-autoservername    +folding           +multi_lang        +terminal
+-balloon_eval      -footer            -mzscheme          +terminfo
++balloon_eval_term +fork()            -netbeans_intg     +termresponse
+-browse            -gettext           +num64             +textobjects
+++builtin_terms    -hangul_input      +packages          +textprop
++byte_offset       +iconv             +path_extra        +timers
++channel           +insert_expand     +perl/dyn          +title
++cindent           +job               +persistent_undo   -toolbar
++clientserver      +jumplist          +popupwin          +user_commands
++clipboard         +keymap            +postscript        +vartabs
++cmdline_compl     +lambda            +printer           +vertsplit
++cmdline_hist      +langmap           +profile           +virtualedit
++cmdline_info      +libcall           +python/dyn        +visual
++comments          +linebreak         +python3/dyn       +visualextra
++conceal           +lispindent        +quickfix          +viminfo
++cryptv            +listcmds          +reltime           +vreplace
++cscope            +localmap          +rightleft         +wildignore
++cursorbind        +lua               +ruby/dyn          +wildmenu
++cursorshape       +menu              +scrollbind        +windows
++dialog_con        +mksession         +signs             +writebackup
++diff              +modify_fname      +smartindent       +X11
++digraphs          +mouse             -sound             +xfontset
+-dnd               -mouseshape        +spell             -xim
+-ebcdic            +mouse_dec         +startuptime       +xpm
++emacs_tags        -mouse_gpm         +statusline        +xsmp_interact
++eval              -mouse_jsbterm     -sun_workshop      +xterm_clipboard
++ex_extra          +mouse_netterm     +syntax            -xterm_save
++extra_search      +mouse_sgr         +tag_binary
+   system vimrc file: "$VIM/vimrc"
+     user vimrc file: "$HOME/.vimrc"
+ 2nd user vimrc file: "~/.vim/vimrc"
+      user exrc file: "$HOME/.exrc"
+       defaults file: "$VIMRUNTIME/defaults.vim"
+  fall-back for $VIM: "/usr/local/share/vim"
+Compilation: gcc -c -I. -Iproto -DHAVE_CONFIG_H     -g -O2 -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1
+Linking: gcc   -L. -Wl,-z,relro -Wl,-z,now -fstack-protector -rdynamic -Wl,-export-dynamic -Wl,-E   -L/usr/local/lib -Wl,--as-needed -o vim    -lSM -lICE -lXpm -lXt -lX11 -lXdmcp -lSM -lICE  -lm -ltinfo -lnsl    -ldl  -L/usr/lib/arm-linux-gnueabihf -lluajit-5.1 -Wl,-E  -fstack-protector-strong -L/usr/local/lib  -L/usr/lib/arm-linux-gnueabihf/perl/5.24/CORE -lperl -ldl -lm -lpthread -lcrypt
+```
