@@ -2,7 +2,7 @@
 
 Original readme is [here](README.original.md)
 
-Method to compile is from [here](https://gist.github.com/lwickline/8c061def750833c544034a66199dc23f)
+Method to compile is from [here](https://gist.github.com/lwickline/8c061def750833c544034a66199dc23f) or [copy](https://gist.github.com/smford/fcf02740a9b1909b54047ee8e24260ab)
 
 ## Installation
 ```
@@ -13,7 +13,7 @@ sudo make install
 
 ## Version
 ```
-aspberrypi# vim --version
+raspberrypi# vim --version
 VIM - Vi IMproved 8.2 (2019 Dec 12, compiled Jan  8 2020 18:54:12)
 Included patches: 1-79
 Compiled by narcotk
