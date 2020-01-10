@@ -2,6 +2,8 @@
 
 Original readme is [here](README.original.md)
 
+Method to compile is from [here](https://gist.github.com/lwickline/8c061def750833c544034a66199dc23f)
+
 ## Installation
 ```
 git clone git@github.com:smford/vim-armhf.git
